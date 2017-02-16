@@ -4,7 +4,7 @@
     "outFile": "index.js",
     "target": "es5",
     "module": "amd",
-    "removeComments": false,
+    "removeComments": true,
     "sourceMap": true,
     "declaration": true,
     "lib": ["es6"],
@@ -13,9 +13,11 @@
     ]
   },
   "include": [
+    "src/declarations.d.ts",
     "src/**/*.ts"
   ],
   "exclude": [
+    "src/**/*.spec.ts",
     "node_modules"
   ]
 }

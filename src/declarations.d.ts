@@ -1,0 +1,1 @@
+declare type CallbackFn<T, Y> = (value: T, index: number, array: T[]) => Y;
