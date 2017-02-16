@@ -1,14 +1,15 @@
 {
   "compilerOptions": {
+    "rootDir": "src/",
+    "outDir": "dist/",
     "target": "es5",
     "module": "commonjs",
     "removeComments": false,
     "sourceMap": true,
-    "outDir": "dist",
     "declaration": true,
     "lib": ["es6"]
   },
-  "files": [
-    "index.ts"
+  "include": [
+    "src/**/*.ts"
   ]
 }

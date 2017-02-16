@@ -1,9 +1,11 @@
 {
   "name": "typescript-array-extensions",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Array extensions to typescript.",
-  "main": "src/index.ts",
+  "main": "index.js",
   "scripts": {
+    "prepublish": "npm build",
+    "build": "tsc",
     "test": "test"
   },
   "repository": {
@@ -20,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/s-soltys/typescript-array-extensions/issues"
   },
-  "homepage": "https://github.com/s-soltys/typescript-array-extensions#readme"
+  "homepage": "https://github.com/s-soltys/typescript-array-extensions#readme",
+  "devDependencies": {
+    "typescript": "^2.1.6"
+  }
 }
