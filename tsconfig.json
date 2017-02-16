@@ -7,9 +7,16 @@
     "removeComments": false,
     "sourceMap": true,
     "declaration": true,
-    "lib": ["es6"]
+    "lib": ["es6"],
+    "types": [
+      "jasmine"
+    ]
   },
   "include": [
     "src/**/*.ts"
+  ],
+  "exclude": [
+    "src/**/*.spec.ts",
+    "node_modules"
   ]
 }
