@@ -1,10 +1,12 @@
 {
   "name": "typescript-array-extensions",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Array extensions to typescript.",
   "main": "index.js",
   "scripts": {
     "prepublish": "tsc",
+    "postinstall": "tsc",
+    "build": "tsc",
     "test": "karma start"
   },
   "repository": {
