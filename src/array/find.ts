@@ -1,9 +1,9 @@
 interface Array<T> {
-    find(callbackFn: CallbackFn<T, boolean>): T | null;
+    find(callbackFn: (value: T, index: number, array: T[]) => boolean): T | null;
 }
 
 ((proto) => {
-    proto.find = function find<T>(this: Array<T>, callbackFn: CallbackFn<T, boolean>): T | null {
+    proto.find = function find<T>(this: Array<T>, callbackFn: (value: T, index: number, array: T[]) => boolean): T | null {
         let result: T | null = null;
 
         this.some((value, index, array) => {

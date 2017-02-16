@@ -1,6 +1,6 @@
 interface Array<T> {
-    groupBy(callbackFn: CallbackFn<T, number>): Map<number, T[]>;
-    groupBy(callbackFn: CallbackFn<T, string>): Map<string, T[]>;
+    groupBy(callbackFn: (value: T, index: number, array: T[]) => number): Map<number, T[]>;
+    groupBy(callbackFn: (value: T, index: number, array: T[]) => string): Map<string, T[]>;
 }
 ((proto) => {
     proto.groupBy = function groupBy<T, G>(this: T[], callbackFn: (value: T, index: number, array: T[]) => G): Map<G, T[]> {

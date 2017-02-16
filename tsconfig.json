@@ -13,7 +13,6 @@
     ]
   },
   "include": [
-    "src/declarations.d.ts",
     "src/**/*.ts"
   ],
   "exclude": [
