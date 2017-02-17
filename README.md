@@ -9,8 +9,6 @@
 - scan
 - sortBy
 - sum
-
-# Appends additional methods to the Array object:
 - Array.zip
 
 # How to use:
@@ -24,8 +22,13 @@ import 'typescript-array-extensions';
 npm run build
 ```
 ```
+// Single run:
 npm run test
-// Code coverage report is generated in coverage/
+
+// Watch mode:
+npm run test-watch
+
+// Code coverage report is generated in ./coverage/
 ```
 
 # TODO:
