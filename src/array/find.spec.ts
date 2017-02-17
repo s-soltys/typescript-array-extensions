@@ -4,13 +4,13 @@ describe("Array.find should", () => {
     it("not find a value in empty array of numbers", () => {
         let arr: number[] = [];
         let out = arr.find(x => x === 2);
-        expect(out).toBeNull();
+        expect(out).toBeUndefined();
     });
 
     it("not find a non-existing value in an array of numbers", () => {
         let arr: number[] = [2, 3, 4, 7, 8, 9];
         let out = arr.find(x => x === 404);
-        expect(out).toBeNull();
+        expect(out).toBeUndefined();
     });
 
     it("find an existing value in an array of numbers", () => {

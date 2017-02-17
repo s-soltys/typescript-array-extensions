@@ -1,10 +1,12 @@
 interface Array<T> {
-    find(callbackFn: (value: T, index: number, array: T[]) => boolean): T | null;
+    find(callbackFn: (value: T, index: number, array: T[]) => boolean): T | undefined;
 }
 
 ((proto) => {
-    proto.find = function find<T>(this: Array<T>, callbackFn: (value: T, index: number, array: T[]) => boolean): T | null {
-        let result: T | null = null;
+    if (typeof proto.find === "function") return;
+    
+    proto.find = function find<T>(this: Array<T>, callbackFn: (value: T, index: number, array: T[]) => boolean): T | undefined {
+        let result: T | undefined = undefined;
 
         this.some((value, index, array) => {
             let isFound = callbackFn(value, index, array);

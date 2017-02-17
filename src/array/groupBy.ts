@@ -3,6 +3,8 @@ interface Array<T> {
     groupBy(callbackFn: (value: T, index: number, array: T[]) => string): Map<string, T[]>;
 }
 ((proto) => {
+    if (typeof proto.groupBy === "function") return;
+    
     proto.groupBy = function groupBy<T, G>(this: T[], callbackFn: (value: T, index: number, array: T[]) => G): Map<G, T[]> {
         const map = new Map<G, T[]>();
 

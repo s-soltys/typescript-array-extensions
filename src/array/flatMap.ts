@@ -3,6 +3,8 @@ interface Array<T> {
 }
 
 ((proto) => {
+    if (typeof proto.flatMap === "function") return;
+    
     proto.flatMap = function flatMap<T, R>(this: T[], callbackFn: (value: T, index: number, array: T[]) => R[]): R[] {
         let arrays = this.map(callbackFn);
         let result = Array.prototype.concat(...arrays);

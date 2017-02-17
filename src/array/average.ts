@@ -4,6 +4,8 @@ interface Array<T> {
 }
 
 ((proto: any) => {
+    if (typeof proto.average === "function") return;
+    
     proto.average = function average<T>(this: Array<T>, callbackFn: (value: T, index: number, array: T[]) => number): number {
         return this.sum(callbackFn) / (this.length || 1);
     }

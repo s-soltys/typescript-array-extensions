@@ -4,6 +4,8 @@ interface Array<T> {
 }
 
 ((proto: any) => {
+    if (typeof proto.sum === "function") return;
+    
     proto.sum = function sum<T>(this: Array<T>, callbackFn: (value: T, index: number, array: T[]) => number): number {
         if (typeof callbackFn === 'function') {
             return this.reduce((sum, value, currentIndex, array) => sum + callbackFn(value, currentIndex, array), 0);
