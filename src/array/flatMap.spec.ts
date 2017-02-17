@@ -1,7 +1,6 @@
 import './flatMap';
 
-describe("Array.flatMap", () => {
-
+describe("Array.flatMap should", () => {
     it("should be callable", () => {
         let arr = ['abc'];
         let out = arr.flatMap(x => x.split(''));

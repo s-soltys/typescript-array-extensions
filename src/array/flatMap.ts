@@ -1,5 +1,5 @@
 interface Array<T> {
-    flatMap<T, R>(callbackFn: (value: T, index: number, array: T[]) => R[]): R[];
+    flatMap<R>(callbackFn: (value: T, index: number, array: T[]) => R[]): R[];
 }
 
 ((proto) => {
