@@ -3,10 +3,14 @@ interface ArrayConstructor {
 }
 
 ((arrayConstructor: any) => {
-    arrayConstructor.zip = function zip<T, F, Y>(leftArray: T[], rightArray: F[], merge: (left: T, right: F) => Y): Y[] {
-        let result = new Array<Y>(leftArray.length)
+    if (typeof arrayConstructor.zip === "function") return;
 
-        for (let i = 0; i < leftArray.length; i++) {
+    arrayConstructor.zip = function zip<T, F, Y>(leftArray: T[], rightArray: F[], merge: (left: T, right: F) => Y): Y[] {
+        let outputLength = Math.min(leftArray.length, rightArray.length);
+
+        let result = new Array<Y>(outputLength);
+
+        for (let i = 0; i < outputLength; i++) {
             result[i] = merge(leftArray[i], rightArray[i]);
         }
         

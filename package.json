@@ -1,6 +1,6 @@
 {
   "name": "typescript-array-extensions",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Array extensions to typescript.",
   "main": "index.js",
   "scripts": {

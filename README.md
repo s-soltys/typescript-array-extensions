@@ -9,6 +9,9 @@
 - sortBy
 - sum
 
+# Appends additional methods to the Array object:
+- Array.zip
+
 # How to use:
 ```
 $ npm install --save typescript-array-extensions
@@ -29,3 +32,4 @@ Implement additional methods:
 - min
 - distinct
 - extent
+- ???
