@@ -24,6 +24,7 @@ npm run build
 ```
 ```
 npm run test
+// Code coverage report is generated in coverage/
 ```
 
 # TODO:

@@ -1,6 +1,6 @@
 {
   "name": "typescript-array-extensions",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Array extensions to typescript.",
   "main": "index.js",
   "scripts": {
@@ -23,14 +23,18 @@
     "url": "https://github.com/s-soltys/typescript-array-extensions/issues"
   },
   "homepage": "https://github.com/s-soltys/typescript-array-extensions#readme",
+  "dependencies": {
+    "core-js": "^2.4.1"
+  },
   "devDependencies": {
-    "typescript": "^2.1.6",
     "@types/jasmine": "^2.5.35",
+    "@types/core-js": "^0.9.35",
     "jasmine-core": "^2.4.1",
     "karma": "^1.2.0",
     "karma-chrome-launcher": "^2.0.0",
     "karma-cli": "^1.0.1",
     "karma-jasmine": "^1.0.2",
-    "karma-typescript": "2.1.7"
+    "karma-typescript": "2.1.7",
+    "typescript": "^2.1.6"
   }
 }
