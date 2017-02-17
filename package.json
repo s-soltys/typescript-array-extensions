@@ -6,7 +6,8 @@
   "scripts": {
     "prepublish": "tsc",
     "build": "tsc",
-    "test": "karma start"
+    "test-watch": "karma start",
+    "test": "karma start --single-run --no-auto-watch"
   },
   "repository": {
     "type": "git",

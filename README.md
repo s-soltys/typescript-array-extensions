@@ -1,4 +1,5 @@
 # Typescript Array Extensions
+![travis build results](https://api.travis-ci.org/s-soltys/typescript-array-extensions.svg?branch=master)
 
 # Extends the ordinary array with additional methods:
 - average
