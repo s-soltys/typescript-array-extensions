@@ -1,5 +1,6 @@
 # Typescript Array Extensions
 ![travis build results](https://api.travis-ci.org/s-soltys/typescript-array-extensions.svg?branch=master)
+Requires the es6 Map polyfill.
 
 # Extends the ordinary array with additional methods:
 - average

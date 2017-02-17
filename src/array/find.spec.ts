@@ -1,3 +1,4 @@
+import 'core-js/es6/map';
 import './average';
 
 describe("Array.find should", () => {
