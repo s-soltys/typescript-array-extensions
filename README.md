@@ -9,6 +9,7 @@
 - scan
 - sortBy
 - sum
+- distinct
 - Array.zip
 
 # How to use:
@@ -29,9 +30,5 @@ npm run test
 ```
 
 # TODO:
-Implement additional methods:
-- max
-- min
-- distinct
-- extent
-- ???
+- Implement additional methods: max, min, extent, ???
+- Convert this project to a proxy for a popular js util library (lodash.js)
