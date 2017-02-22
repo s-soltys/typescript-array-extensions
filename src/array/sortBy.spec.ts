@@ -1,4 +1,3 @@
-import 'core-js/es6/map';
 import './sortBy';
 
 describe("Array.sortBy should", () => {

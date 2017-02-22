@@ -4,10 +4,12 @@
     "outFile": "index.js",
     "target": "es5",
     "module": "amd",
-    "removeComments": true,
+    "removeComments": false,
     "sourceMap": true,
     "declaration": true,
-    "lib": ["es6"],
+    "lib": [
+      "es2016"
+    ],
     "types": [
       "jasmine"
     ]

@@ -26,7 +26,6 @@
   "homepage": "https://github.com/s-soltys/typescript-array-extensions#readme",
   "devDependencies": {
     "@types/jasmine": "^2.5.35",
-    "@types/core-js": "^0.9.35",
     "core-js": "^2.4.1",
     "jasmine-core": "^2.4.1",
     "karma": "^1.2.0",

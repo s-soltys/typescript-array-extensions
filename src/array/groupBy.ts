@@ -2,6 +2,7 @@ interface Array<T> {
     groupBy(callbackFn: (value: T, index: number, array: T[]) => number): Map<number, T[]>;
     groupBy(callbackFn: (value: T, index: number, array: T[]) => string): Map<string, T[]>;
 }
+
 ((proto) => {
     if (typeof proto.groupBy === "function") return;
     

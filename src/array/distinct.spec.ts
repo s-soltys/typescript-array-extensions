@@ -1,4 +1,3 @@
-import 'core-js/es6/map';
 import './distinct';
 
 describe("Array.distinct should", () => {

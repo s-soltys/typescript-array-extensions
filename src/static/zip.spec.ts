@@ -1,4 +1,3 @@
-import 'core-js/es6/map';
 import './zip';
 
 describe("Array.zip should", () => {
