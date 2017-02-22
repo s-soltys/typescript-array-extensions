@@ -21,8 +21,5 @@ module.exports = function (config) {
                 flags: ['--no-sandbox']
             }
         },
-        karmaTypescriptConfig: {
-            // tsconfig: "./tsconfig.json"
-        }
     });
 };
