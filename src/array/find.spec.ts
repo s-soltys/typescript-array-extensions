@@ -1,5 +1,7 @@
+(Array as any).prototype.find = null; // remove default find implementation
+
 import 'core-js/es6/map';
-import './average';
+import './find';
 
 describe("Array.find should", () => {
     it("not find a value in empty array of numbers", () => {
