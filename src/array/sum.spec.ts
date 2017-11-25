@@ -20,6 +20,12 @@ describe("Array.sum should", () => {
         expect(out).toBe(6);
     });
 
+    it("sum values in array of numbers without a callbackFn", () => {
+        let arr = [1, 2, 3, '3.4', '1', 4.5];
+        let out = arr.sum();
+        expect(out).toBe(14.9);
+    });
+
     it("sum values in array of objects without a callbackFn", () => {
         let arr = [{ v: 1 }, { v: 3 }, { v: 10 }];
         let out = arr.sum();
